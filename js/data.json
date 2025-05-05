@@ -1,0 +1,35 @@
+{
+    "name": "Rasmus W",
+    "jobTitle": "Game Developer, Full-Stack Web Developer",
+    "email": "loremipsum@gmail.com",
+    "phone": "+372 59837123",
+    "location": "Tallinn, Estonia",
+    "linkedin": {
+      "url": "https://linkedin.com/in/loremipsum",
+      "label": "Rasmus W"
+    },
+    "education": {
+      "title": "Robotics Engineer",
+      "institution": "TTK University of Applied Sciences",
+      "dates": "2023-2027"
+    },
+    "work": {
+      "title": "Game Developer",
+      "institution": "Roblox, WFH",
+      "dates": "2020 - Present",
+      "details": [
+        "100 Million+ Players reached",
+        "Scripting (Luau), 3D modeling",
+        "Published a framework used by 500 Games"
+      ]
+    },
+    "skills": [
+      "HTML5",
+      "Lua(u)",
+      "Javascript (js), Typescript (ts)",
+      "Python, Rust, Go",
+      "Project Management",
+      "Team Collaboration"
+    ]
+  }
+  
