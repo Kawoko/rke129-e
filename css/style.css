@@ -1,0 +1,291 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; 
+    color: #333;
+    padding: 20px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; 
+}
+
+.profile-pic {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+    border: 3px solid #eee; 
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em; 
+    color: #2c3e50; 
+}
+
+.job-title {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+section:not(:last-of-type) {
+    border-bottom: 1px solid #eee; 
+}
+
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    display: inline-block; 
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#contact strong {
+    display: inline-block;
+    width: 90px;
+    color: #555;
+}
+
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.entry {
+    margin-bottom: 25px;
+}
+
+.entry h3 {
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    color: #2c3e50;
+}
+
+.entry .institution {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.entry .dates {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.entry .details {
+    font-size: 0.95em;
+    color: #666;
+}
+
+
+#work ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+#work li {
+    margin-bottom: 8px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+#skills li {
+    background-color: #e0eaf1; 
+    color: #34495e;
+    padding: 8px 15px;
+    border-radius: 15px; 
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#skills li:hover {
+    background-color: #3498db; 
+    color: #ffffff; 
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .job-title {
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .entry h3 {
+        font-size: 1.2em;
+    }
+
+    #contact strong {
+        width: auto; 
+        display: block;
+        margin-bottom: 2px;
+    }
+
+    #skills ul {
+       gap: 8px;
+    }
+     #skills li {
+       padding: 6px 12px;
+       font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+     header h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Carousel Styles */
+
+.profile-carousel {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-carousel .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.profile-carousel .carousel-image {
+    display: none;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-carousel .carousel-image.active {
+    display: block;
+}
+
+.profile-carousel .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffffdd;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+.profile-carousel .carousel-btn.left {
+    left: -10px;
+}
+
+.profile-carousel .carousel-btn.right {
+    right: -10px;
+}
+
+.profile-carousel .carousel-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Adjust on smaller screens */
+@media (max-width: 480px) {
+    .profile-carousel {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-carousel .carousel-image {
+        width: 120px;
+        height: 120px;
+    }
+}
